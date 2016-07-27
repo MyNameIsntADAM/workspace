@@ -20,6 +20,11 @@ public class Member implements Comparable<Member> {
 		lastName = m.getLastName();
 		id = m.getID();
 	}
+	
+	public Member(long id) {
+		generate();
+		this.id = id;
+	}
 
 	public Member(String first, String last, long id) {
 		firstName = first;
@@ -94,4 +99,5 @@ public class Member implements Comparable<Member> {
 			System.out.println(members.get(i).toString(true) + " ");
 		}
 	}
+	
 }
